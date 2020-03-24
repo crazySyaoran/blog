@@ -4,4 +4,7 @@ title: 关于
 permalink: /about/
 ---
 
-这是一个关于页面，请编辑about.md以介绍你的博客。
+这里是Syaoran的个人博客。
+
+如果想要联系我，你可以留言或给给我发邮件：
+syao_ran@qq.com
