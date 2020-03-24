@@ -1,0 +1,20 @@
+---
+layout: post
+title: Introduction
+date: 2020-03-24
+Author: Syaoran
+tags: [sample]
+comments: true
+---
+
+Java学习笔记
+
+- 在Java中新建一个可变长的String型字符串
+    List<StringBuilder> rows = new ArrayList<>();
+
+- String, StringBuffer, StringBuilder的区别
+	- String是字符串的常量，StringBuild和StringBuffer是字符串变量，变量的更改只需修改指针，因此速度要快得多
+> String 看上去是可以修改的，但修改过程实际上Java是新建了一个String对象并回收旧对象，导致速度会变慢
+	- StringBuilder是线程不安全的，StringBuffer是线程安全的，同时因此StringBuilder也是速度最快的
+
+
