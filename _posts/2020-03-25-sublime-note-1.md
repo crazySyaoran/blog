@@ -54,8 +54,9 @@ Preferences -> Key Bindings ->
 
 **- MarkdownPreview + LiveReload**  
 实时刷新预览  
-##### - 首先配置好MarkdownPreview
-**- 配置LiveReload**  
+
+首先配置好MarkdownPreview  
+配置LiveReload。
 调出命令面板，使用`Package Control: Disable Package`，安装`LiveReload`  
 安装成功后，再次调出命令面板，输入`LiveReload: Enable/disable plug-ins`，在弹出的选项中选择`Simple Reload with delay (400ms)`或者`Simple Reload`
 > 两者的区别仅仅在于后者没有延迟。  
