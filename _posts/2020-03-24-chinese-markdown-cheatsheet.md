@@ -7,7 +7,7 @@ tags: [sample, markdown]
 comments: true
 ---
 
-本中文版Markdown语法简介来自博客 <https://blog.shengbin.me/posts/markdown-syntax>，并由[中世界](https://github.com/FromEndWorld/loffer)完成了汉化。其中的站位文字来自[狗屁不通文章生成器](https://suulnnka.github.io/BullshitGenerator/index.html)。
+本中文版Markdown语法简介来自[Shengbin's Blog](https://blog.shengbin.me/posts/markdown-syntax)，并由[中世界](https://github.com/FromEndWorld/loffer)完成了汉化。其中的站位文字来自[狗屁不通文章生成器](https://suulnnka.github.io/BullshitGenerator/index.html)。
 
 [Markdown语法的完整文档在这里](http://daringfireball.net/projects/markdown/syntax)。下面整理的这些为了方便写博客时参考。
 
