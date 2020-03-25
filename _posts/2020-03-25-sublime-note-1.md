@@ -12,7 +12,7 @@ comments: true
 (MAC请使用 `command + shift + P`)
 
 ### - 调出控制台
-<code>ctrl + `</code>  
+`ctrl + \``  
 (MAC用户同上)  
 
 ### - 安装插件
