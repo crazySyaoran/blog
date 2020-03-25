@@ -12,7 +12,7 @@ comments: true
 (MAC请使用 `command + shift + P`)
 
 ### - 调出控制台
-`ctrl + \``  
+ctrl + `  
 (MAC用户同上)  
 
 ### - 安装插件
@@ -25,11 +25,12 @@ comments: true
 - 调出命令面板，使用`Package Control: Disable Package`
 - 或在配置文件中一次性添加：  
 Perferences -> Setting ->   
-<pre><code>"ignored_packages":
-[
-    "XXXX",
-],
-</code></pre>
+```	
+"ignored_packages":   
+[  
+    "XXXX",   
+],  
+```
 
 ### - 配置Markdown的实时预览
 注意，连接SublimeText的服务器需要翻墙，请尽可能保证VPN处于全局状态  
@@ -45,7 +46,9 @@ Perferences -> Setting ->
 也可以设置快捷键：  
 Preferences -> Key Bindings ->  
 在右侧的User部分加入  
-	<pre><code>{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}  }  </code></pre>
+```
+{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}  } 
+```
 > "alt+m" 可设置为自己喜欢的按键。  
 > "parser": "markdown"也可设置为"parser":"github"，改为使用Github在线API解析markdown。
 
