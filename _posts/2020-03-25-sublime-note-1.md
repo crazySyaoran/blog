@@ -9,7 +9,7 @@ comments: true
 
 ### - 调出命令面板  
 `ctrl + shift + P`  
-(MAC请使用 command + shift + P)
+(MAC请使用 `command + shift + P`)
 
 ### - 调出控制台
 <code>ctrl + `</code>  
@@ -25,11 +25,11 @@ comments: true
 - 调出命令面板，使用`Package Control: Disable Package`
 - 或在配置文件中一次性添加：  
 Perferences -> Setting ->   
-	<pre><code>"ignored_packages":
-    [
-        "XXXX",
-    ],
-    </code></pre>
+<pre><code>"ignored_packages":
+[
+    "XXXX",
+],
+</code></pre>
 
 ### - 配置Markdown的实时预览
 注意，连接SublimeText的服务器需要翻墙，请尽可能保证VPN处于全局状态  
@@ -49,15 +49,15 @@ Preferences -> Key Bindings ->
 > "alt+m" 可设置为自己喜欢的按键。  
 > "parser": "markdown"也可设置为"parser":"github"，改为使用Github在线API解析markdown。
 
-#### - MarkdownPreview + LiveReload
+**- MarkdownPreview + LiveReload**  
 实时刷新预览  
 ##### - 首先配置好MarkdownPreview
-##### - 配置LiveReload
+**- 配置LiveReload**
 调出命令面板，使用`Package Control: Disable Package`，安装`LiveReload`  
 安装成功后，再次调出命令面板，输入`LiveReload: Enable/disable plug-ins`，在弹出的选项中选择`Simple Reload with delay (400ms)`或者`Simple Reload`
 > 两者的区别仅仅在于后者没有延迟。  
 
-##### - 现在MarkdownPreView的网页会在你每次保存后自动刷新
+**- 现在MarkdownPreView的网页会在你每次保存后自动刷新**
 
 
 
