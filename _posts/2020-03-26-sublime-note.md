@@ -8,8 +8,8 @@ comments: true
 ---
 
 ### - 调出命令面板  
-ctrl + shift + P  
-(MAC请使用 command + shift + P)
+`ctrl + shift + P`  
+(MAC请使用 `command + shift + P`)
 
 ### - 调出控制台
 ctrl + `  
