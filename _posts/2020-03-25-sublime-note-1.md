@@ -62,21 +62,3 @@ Preferences -> Key Bindings ->
 > 两者的区别仅仅在于后者没有延迟。  
 
 **现在MarkdownPreView的网页会在你每次保存后自动刷新**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
