@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SublimeText笔记
-date: 2020-03-25
+date: 2020-03-26
 Author: Syaoran 
 tags: [sublime, note, markdown]
 comments: true
