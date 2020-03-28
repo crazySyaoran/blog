@@ -73,14 +73,14 @@ footer-text:
 #
 
 # 输入Disqus shortname，即可添加评论区
-disqus: zai-wu-chi #shortname
+# disqus: zai-wu-chi #shortname
 
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
+  clientID: 7249c4f9786e32108915
+  clientSecret: e323d69e920a2e73cf99b6f511452894910a9c05
+  repo: blog
+  owner: crazySyaoran
 
 # 输入Google Analytics web tracking code
 google_analytics:
