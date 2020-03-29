@@ -101,20 +101,20 @@ int n = i.intValue();
 然后就引出了一道非常有意思的Java面试题：
 ```
 public void testAutoBox2() {
-	 //1
-     int a = 100;
-     Integer b = 100;
-     System.out.println(a == b);
+	//1
+    int a = 100;
+    Integer b = 100;
+    System.out.println(a == b);
+      
+    //2
+    Integer c = 100;
+    Integer d = 100;
+    System.out.println(c == d);
      
-     //2
-     Integer c = 100;
-     Integer d = 100;
-     System.out.println(c == d);
-     
-     //3   
-     c = 200;
-     d = 200;
-     System.out.println(c == d);
+    //3   
+    c = 200;
+    d = 200;
+    System.out.println(c == d);
 }
 ```
 第一个因为基础类和包装类进行比较，包装类会被拆箱成基础类，基础类int的比较是值的比较，因此是true
@@ -122,7 +122,8 @@ public void testAutoBox2() {
 
 第二个和第三个的结果很有意思，第二个的结果是true，而第三个的结果是false。
 原因和Integer.valueOf()的实现有关：
-> MAC版IDEA使用`Command+左键点击方法名`可以跳转到源码
+> MAC版IDEA使用`Command+左键点击方法名`可以跳转到源码   
+
 ```
 public final class Integer extends Number implements Comparable<Integer> {
 // ...
