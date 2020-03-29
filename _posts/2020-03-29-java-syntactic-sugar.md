@@ -49,7 +49,33 @@ public class Student<? super Integer> {}
 
 ```
 
-> Java中的参数化类型只在源码中存在，在编译后的字节码中，已经被替换为原来的原生类型了，并且在相应的地方插入了强制转换代码。对于运行期的Java 语言来说，ArrayList<Integer>和ArrayList<String>就是同一个类。所以说泛型技术实际上就是 Java语言的一颗语法糖，Java语言中的泛型实现方法称为类型擦除，基于这种方法实现的泛型称为伪泛型。
+另外，<>中可以加入多个类型参数（Type Parameters），官方给出了以下例程：  
+```
+public interface Pair<K, V> {
+    public K getKey();
+    public V getValue();
+}
+
+public class OrderedPair<K, V> implements Pair<K, V> {
+
+    private K key;
+    private V value;
+
+    public OrderedPair(K key, V value) {
+    this.key = key;
+    this.value = value;
+    }
+
+    public K getKey()   { return key; }
+    public V getValue() { return value; }
+}
+
+// The following statements create two instantiations of the OrderedPair class:
+Pair<String, Integer> p1 = new OrderedPair<String, Integer>("Even", 8);
+Pair<String, String>  p2 = new OrderedPair<String, String>("hello", "world");
+```  
+
+> Java中的参数化类型只在源码中存在，在编译后的字节码中，已经被替换为原来的原生类型了，并且在相应的地方插入了强制转换代码。对于运行期的Java 语言来说，Integer型的ArrayList和String型的ArrayList就是同一个类。所以说Java语言中的泛型实现方法称为类型擦除，基于这种方法实现的泛型称为伪泛型。
 > 
 ```
 (new ArrayList<Integer>()).getClass() == (new ArrayList<String>()).getClass()
