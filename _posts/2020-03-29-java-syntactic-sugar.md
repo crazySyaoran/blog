@@ -159,15 +159,14 @@ public final class Integer extends Number implements Comparable<Integer> {
         }
 
         private IntegerCache() {}
-    }
-    public static Integer valueOf(int i) {
-        if (i >= IntegerCache.low && i <= IntegerCache.high)
-            return IntegerCache.cache[i + (-IntegerCache.low)];
-        return new Integer(i);
-    }
-// ...
-}
-
+    }  
+    public static Integer valueOf(int i) {  
+        if (i >= IntegerCache.low && i <= IntegerCache.high)  
+            return IntegerCache.cache[i + (-IntegerCache.low)];  
+        return new Integer(i);  
+    }  
+// ...  
+}  
 ```
 
 可以看出，包装器Integer初始化了一个叫做IntegerCache的静态数组，这样当需要产生一个在[-128, 127]之间的Integer对象时，无需调用Integer的构造函数，只需从IntegerCache[]中取出对应元素就可以了，这样节省了空间和调用构造函数的时间，只有在需要产生一个不在[-128, 127]区间的Integer才会单独生成一个Integer对象。
