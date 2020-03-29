@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java语法糖
-date: 2020-03-26
+date: 2020-03-29
 Author: Syaoran
 tags: [java, note]
 comments: true
