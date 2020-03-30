@@ -199,7 +199,19 @@ public final class Integer extends Number implements Comparable<Integer> {
 因此题目中值为100的Integer都是IntegerCache[]中的同一个元素，因此是相同的引用；而值为100的Integer是新生成的对象，是不同的引用。
 
 
-
+### Java可变长参数
+在 Java 5 中提供了变长参数，允许在调用方法时传入不定长度的参数。变长参数是Java的一个语法糖，本质上还是基于数组的实现。  
+在定义方法时，在最后一个形参后加上三个点`...`，就表示该形参可以接受多个参数值，多个参数值被当成数组传入。
+- 可变参数只能作为函数的最后一个参数，但其前面可以有也可以没有任何其他参数
+- 由于可变参数必须是最后一个参数，所以一个函数最多只能有一个可变参数
+- Java的可变参数，会被编译器转型为一个数组  
+> 
+```
+public static void test(String... args) {  
+    for(String arg : args) {   
+        System.out.println(arg);  
+    }  
+```
 
 
 
