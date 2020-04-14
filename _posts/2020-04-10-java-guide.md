@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Guide 笔记
-date: 2020-03-29
+date: 2020-04-10
 Author: Syaoran
 tags: [java, note, javaGuide]
 comments: true
@@ -44,11 +44,57 @@ overload是方法名相同，参数类型和顺序不同。构造方法（构造
 
 所谓多态就是指程序中定义的引用变量所指向的具体类型和通过该引用变量发出的方法调用在编程时并不确定，而是在程序运行期间才确定，即一个引用变量到底会指向哪个类的实例对象，该引用变量发出的方法调用到底是哪个类中实现的方法，必须在由程序运行期间才能决定。
 
-在 Java 中有两种形式可以实现多态：继承（多个子类对同一方法的重写）和接口（实现接口并覆盖接口中同一方法）。
+在Java中有两种形式可以实现多态：继承（多个子类对同一方法的重写）和接口（实现接口并覆盖接口中同一方法）。
 
+### 在一个静态方法内调用一个非静态成员为什么是非法的? 
 
+由于静态方法可以不通过对象进行调用，因此在静态方法里，不能调用其他非静态变量，也不可以访问非静态变量成员。
 
+### 在Java中定义一个不做事且没有参数的构造方法的作用
 
+Java 程序在执行子类的构造方法之前，如果没有用 super()来调用父类特定的构造方法，则会调用父类中“没有参数的构造方法”。因此，如果父类中只定义了有参数的构造方法，而在子类的构造方法中又没有用 super()来调用父类中特定的构造方法，则编译时将发生错误，因为 Java 程序在父类中找不到没有参数的构造方法可供执行。解决办法是在父类里加上一个不做事且没有参数的构造方法。
+
+### 接口和抽象类的区别
+
+接口是行为的抽象，抽象类是对类的抽象
+
+### 重写equals()方法就一定同时要重写hashCode()方法
+
+因为要求如果两个对象通过调用equals方法是相等的，那么这两个对象调用hashCode方法必须返回相同的整数。
+
+### 序列化与transient关键字
+
+transient 关键字的作用是阻止实例中那些用此关键字修饰的的变量序列化；当对象被反序列化时，被 transient 修饰的变量值不会被持久化和恢复。transient 只能修饰变量，不能修饰类和方法。
+
+### 获取键盘输入的两种方法
+
+- Scanner  
+```
+Scanner input = new Scanner(System.in);
+String s  = input.nextLine();
+input.close();
+```
+- BufferReader  
+```
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+String s = input.readLine();
+```
+
+### Collection工具类和Arrays工具类
+
+Collections 工具类常用方法:
+- 排序
+- 查找,替换操作
+- 同步控制(不推荐，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合)
+
+Arrays工具类常见操作  
+- 排序 : sort()
+- 查找 : binarySearch()
+- 比较: equals()
+- 填充 : fill()
+- 转列表: asList()
+- 转字符串 : toString()
+- 复制: copyOf()
 
 
 
