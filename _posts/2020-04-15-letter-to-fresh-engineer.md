@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A letter to myself as a fresh software engineer
+title: A Letter To Myself As A Fresh Software Engineer
 date: 2020-04-15
 Author: Syaoran
 tags: [experience, letter]
@@ -42,7 +42,8 @@ comments: true
 
 ### 传递价值，而非代码
 
-请不要被[NIH sundrome](https://en.wikipedia.org/wiki/Not_invented_here)所干扰，重新造轮子没有任何意义，避免浪费时间在一些已经完成的事物上，如果你能仅仅通过组合一些工具来达成目的，那就完全可以这样做，你作为一个软件工程师应传递的该是你业务的价值而非你代码的行数。
+请不要被[NIH综合症](https://en.wikipedia.org/wiki/Not_invented_here)所干扰，重新造轮子没有任何意义，避免浪费时间在一些已经完成的事物上，如果你能仅仅通过组合一些工具来达成目的，那就完全可以这样做，你作为一个软件工程师应传递的该是你业务的价值而非你代码的行数。
+> NIH综合症（Not Invented Here Syndrome，非我所创综合症），指的是社会、公司和组织中的一种文化现象，人们不愿意使用、购买或者接受某种产品、研究成果或者知识，不是出于技术或者法律等因素，而只是因为它源自其他地方。  
 
 ### 选择生活，而非工作
 
