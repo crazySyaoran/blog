@@ -179,7 +179,51 @@ System.out.println(array[0]);  // 1
 
 ## 重要知识点详解
 
-// TODO CONTINUE  
+// TODO PASS
+
+# 并发
+
+## 面试题总结
+
+### Java 程序天生就是多线程程序
+
+我们可以通过 JMX 来看一下一个普通的 Java 程序有哪些线程，代码如下。
+```
+public class MultiThread {
+	public static void main(String[] args) {
+		// 获取 Java 线程管理 MXBean
+	ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
+		// 不需要获取同步的 monitor 和 synchronizer 信息，仅获取线程和线程堆栈信息
+		ThreadInfo[] threadInfos = threadMXBean.dumpAllThreads(false, false);
+		// 遍历线程信息，仅打印线程 ID 和线程名称信息
+		for (ThreadInfo threadInfo : threadInfos) {
+			System.out.println("[" + threadInfo.getThreadId() + "] " + threadInfo.getThreadName());
+		}
+	}
+}
+```
+上述程序输出如下
+> 输出内容可能不同，不用太纠结下面每个线程的作用，只用知道 main 线程执行 main 方法即可   
+```
+[5] Attach Listener //添加事件
+[4] Signal Dispatcher // 分发处理给 JVM 信号的线程
+[3] Finalizer //调用对象 finalize 方法的线程
+[2] Reference Handler //清除 reference 线程
+[1] main //main 线程,程序入口
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
