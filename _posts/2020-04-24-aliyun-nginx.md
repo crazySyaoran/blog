@@ -26,6 +26,8 @@ comments: true
 
 ### 配置Nginx
 
+n
+
 ssh连接服务器
 ```
 ssh root@ip
