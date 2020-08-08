@@ -40,7 +40,8 @@ public abstract class AbstractVerticle implements Verticle {...}
 ![822e3d3fb24ea89bdec47d8078f93db8.png](..\post_images\822e3d3fb24ea89bdec47d8078f93db8.png)
 > 这个位置夹在两个Deprecated中间是真的考验眼力。而且为什么IDE识别到了这个方法却不能进行跳转= =
 
-点进去可以发现Verticle中通过default实现了`start(Promise<Void>)`方法，而且实际上就是把Promise强转成Future = =
+点进去可以发现Verticle中通过default实现了`start(Promise<Void>)`方法，而且实际上就是把Promise~~强制~~类型转成Future = =
+> 感谢[itgeekhome](https://itgeekhome.com/)的指正，这里应该不算强转
 
 > 这样就顺便复习一下default关键字：default关键字由Java8引入，通过default就可以完成在接口类中进行方法的实现，实现了default方法的接口依然是接口，这意味着Java中可以通过这种方法完成“多重继承”（如果实现的两个接口中有同名方法会报错，需要手动override）。另外，default方法也是可以被Override的。
 
