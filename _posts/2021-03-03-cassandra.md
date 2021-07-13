@@ -3,7 +3,7 @@ layout: post
 title: cassandra学习笔记
 date: 2021-03-03
 Author: Syaoran
-tags: [cassandra, database]
+tags: [cassandra, database, note]
 comments: true
 ---
 
