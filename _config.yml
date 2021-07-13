@@ -8,7 +8,7 @@
 
 # 描述/签名
 name: 载无离
-description: 凡是过往，皆为序章。
+description: 絶対に大丈夫
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
 url: 
@@ -66,7 +66,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-footer-text: Don't forget why you are different.
+footer-text: 载营魄抱一，能无离乎？
 
 #
 # 评论，注意，请不要同时添加多种不同的评论区
